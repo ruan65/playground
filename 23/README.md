@@ -380,6 +380,20 @@ sudo nginx -t
 sudo systemctl restart nginx
 ```
 
+если домены не синкнулись с ns servers
+
+```
+sudo nano /etc/hosts
+```
+
+```
+127.0.0.1   localhost
+127.0.0.1   guest-desktop
+111.111.111.111 example.com
+111.111.111.111 test.com
+```
+
+
 ## Добавление сертификата
 
 Запускаем certbot
